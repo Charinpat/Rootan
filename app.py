@@ -20,6 +20,8 @@ app = Flask(__name__)
 lineaccesstoken = 'tAVxtDE0Imrv91ENrACuDwf4/iGoRu1dlpMRNCWRVRyQKgLLdV54LdGI0CMjWU2LwHGqbSLAdI/L1J/7VwRdh/NENbLBjycnN+JgwF7Y4kdLkqu40tTm6uLgXR4klP2E4mBK6QR9koApsOGwYLMjrwdB04t89/1O/w1cDnyilFU='
 line_bot_api = LineBotApi(lineaccesstoken)
 
+casedata = pd.read_excel('casedata.xlsx')
+
 ####################### new ########################
 @app.route('/')
 def index():
