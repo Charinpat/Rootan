@@ -8,3 +8,4 @@ line-bot-sdk
 pandas
 googletrans
 geopy
+xlrd
