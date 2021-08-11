@@ -63,11 +63,6 @@ def event_handle(event):
         line_bot_api.reply_message(rtoken, replyObj)
         return ''
 
-    if msgType == "text":
-        msg = str(event["message"]["text"])
-        replyObj = TextSendMessage(text=msg)
-        line_bot_api.reply_message(rtoken, replyObj)
-
     if msgType == "location":
         lat = event["message"]["latitude"]
         lng = event["message"]["longitude"]
@@ -106,4 +101,4 @@ def getdistace(latitude, longitude,cdat):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run() #debug=True
